@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Νάρκισσος</string>
+    <string name="Address">Γκινοσάτη 83, Μεταμόρφωση Αττικής</string>
+    <string name="CreatedBy">Μια δημιουργία του :</string>
+    <string name="FB">www.facebook.com/perivolarakis.costas</string>
+    <string name="MainText">Η οικογένεια Περιβολαράκη ασχολείται με το λουλούδι από τις αρχές του 1900. Το 1930 ο παππούς Κ.Περιβολαράκης καλλιεργούσε λουλούδια,τα οποία πουλούσε στις λαϊκές. Ο υιός Γεώργιος συνέχισε τις καλλιέργειες ώσπου το 1992 η γυναίκα άνοιξε το ανθοπωλείο Νάρκισσος, το οποίο διατηρεί ο υιός της Κωνσταντίνος Περιβολαράκης ο νεότερος.</string>
+    <string name="MainTitle">Από το 1992 διακρινόμαστε για την ποιότητα και τις καλές τιμές μας.</string>
+    <string name="Name">Σουρτζόπουλος Λεωνίδας</string>
+    <string name="Tel">210 28 12 141</string>
+    <string name="Time">09:00 πμ - 10:30 μμ</string>
+    <string name="Title1">Νάρκισσος</string>
+    <string name="Title2">Α ν θ ο σ υ ν θ έ σ ε ι ς</string>
+    <string name="scrolltext">Γάμος - Βάπτιση - Στολισμοί - Ανθοδέσμες - Ανθοσυνθέσεις</string>
+</resources>

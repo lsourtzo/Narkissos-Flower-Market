@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.lsourtzo.narkissos.narkissos.MainActivity">
+
+    <ImageView style="@style/LineStyle" />
+
+    <com.lsourtzo.narkissos.narkissos.TextViewCMTitle
+        style="@style/TitleStyle"
+        android:paddingTop="@dimen/SmallSpace"
+        android:text="@string/Title1"
+        android:textSize="@dimen/Title1" />
+
+    <com.lsourtzo.narkissos.narkissos.TextViewCM
+        style="@style/TitleStyle"
+        android:paddingBottom="@dimen/SmallSpace"
+        android:text="@string/Title2"
+        android:textSize="@dimen/Title2" />
+
+    <ImageView style="@style/LineStyle" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/topimage"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"/>
+
+            <com.lsourtzo.narkissos.narkissos.TextViewCM
+                style="@style/InerText"
+                android:paddingLeft="@dimen/OuterSpace"
+                android:paddingRight="@dimen/OuterSpace"
+                android:text="@string/MainTitle"
+                android:textAlignment="center"
+                android:textSize="@dimen/TitleSize"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/smallimage"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="@dimen/OuterSpace"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/front" />
+
+                <com.lsourtzo.narkissos.narkissos.TextViewCM
+                    style="@style/InerText"
+                    android:layout_toRightOf="@id/smallimage"
+                    android:paddingRight="@dimen/OuterSpace"
+                    android:text="@string/MainText"
+                    android:textSize="@dimen/BodySize" />
+            </RelativeLayout>
+
+            <com.lsourtzo.narkissos.narkissos.TextViewCM
+                android:id="@+id/marquee_text_1"
+                style="@style/InerText"
+                android:layout_marginBottom="@dimen/SmallSpace"
+                android:text="@string/scrolltext"
+                android:textSize="@dimen/BodySizeL"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true" />
+
+            <ImageView style="@style/LineStyle" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorT"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/vitrina_6" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/vitrina_2" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/vitrina_3" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/vitrina_4" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/vitrina_5" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/vitrina_1" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ImageView style="@style/LineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/InfoIcon"
+                    android:src="@drawable/home" />
+
+                <com.lsourtzo.narkissos.narkissos.TextViewCM
+                    style="@style/InfoText"
+                    android:text="@string/Address" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/SmallSpace"
+                android:src="@drawable/map2"
+                android:onClick="callgooglemap"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/InfoIcon"
+                    android:src="@drawable/phone" />
+
+                <com.lsourtzo.narkissos.narkissos.TextViewCM
+                    style="@style/InfoText"
+                    android:text="@string/Tel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/InfoIcon"
+                    android:src="@drawable/fb" />
+
+                <com.lsourtzo.narkissos.narkissos.TextViewCM
+                    style="@style/InfoText"
+                    android:text="@string/FB" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/InerSpace">
+
+                <ImageView
+                    style="@style/InfoIcon"
+                    android:src="@drawable/clock" />
+
+                <com.lsourtzo.narkissos.narkissos.TextViewCM
+                    style="@style/InfoText"
+                    android:text="@string/Time" />
+            </LinearLayout>
+
+            <ImageView style="@style/LineStyle" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorT"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/artph_1" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/artph_1_5" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/artph_2" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/artph_2_5" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/artph_3" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/artph_3_5" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/arthp_4" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/artph_4_5" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/artph_5" />
+
+                    <ImageView
+                        style="@style/ImagesRibon"
+                        android:src="@drawable/artph_5_5" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ImageView style="@style/LineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.lsourtzo.narkissos.narkissos.TextViewCM
+                    style="@style/CreatedByText"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/OuterSpace"
+                    android:text="@string/CreatedBy" />
+
+                <com.lsourtzo.narkissos.narkissos.TextViewCM
+                    style="@style/CreatedByText"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/OuterSpace"
+                    android:text="@string/Name" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
