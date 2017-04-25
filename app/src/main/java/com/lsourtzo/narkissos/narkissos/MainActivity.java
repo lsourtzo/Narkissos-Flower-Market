@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // This animation change the images at the top
         setContentView(R.layout.activity_main);
         ImageView TopView = (ImageView) findViewById(R.id.topimage);
         TopView.setBackgroundResource(R.drawable.top_image_anim);
@@ -32,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
-
     }
 
 }

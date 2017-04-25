@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lsourtzo.narkissos.narkissos.MainActivity">
+
+<LinearLayout
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
     android:orientation="vertical"
-    tools:context="com.lsourtzo.narkissos.narkissos.MainActivity">
+    >
 
     <ImageView style="@style/LineStyle" />
 
     <com.lsourtzo.narkissos.narkissos.TextViewCMTitle
         style="@style/TitleStyle"
-        android:paddingTop="@dimen/SmallSpace"
-        android:text="@string/Title1"
-        android:textSize="@dimen/Title1" />
+        android:paddingTop="@dimen/smallSpace"
+        android:text="@string/title1"
+        android:textSize="@dimen/title1" />
 
     <com.lsourtzo.narkissos.narkissos.TextViewCM
         style="@style/TitleStyle"
-        android:paddingBottom="@dimen/SmallSpace"
-        android:text="@string/Title2"
-        android:textSize="@dimen/Title2" />
+        android:paddingBottom="@dimen/smallSpace"
+        android:text="@string/title2"
+        android:textSize="@dimen/title2" />
 
     <ImageView style="@style/LineStyle" />
 
@@ -36,17 +41,18 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:id="@+id/topimage"
-                android:layout_height="120dp"
+                android:layout_height="@dimen/animationHeight"
                 android:scaleType="centerCrop"/>
 
             <com.lsourtzo.narkissos.narkissos.TextViewCM
                 style="@style/InerText"
-                android:paddingLeft="@dimen/OuterSpace"
-                android:paddingRight="@dimen/OuterSpace"
-                android:text="@string/MainTitle"
+                android:paddingLeft="@dimen/outerSpace"
+                android:paddingRight="@dimen/outerSpace"
+                android:text="@string/mainTitle"
                 android:textAlignment="center"
-                android:textSize="@dimen/TitleSize"
-                android:textStyle="bold" />
+                android:textSize="@dimen/titleSize"
+                android:textStyle="bold"
+                />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -56,24 +62,24 @@
                     android:id="@+id/smallimage"
                     android:layout_width="120dp"
                     android:layout_height="180dp"
-                    android:layout_margin="@dimen/OuterSpace"
+                    android:layout_margin="@dimen/outerSpace"
                     android:scaleType="centerCrop"
                     android:src="@drawable/front" />
 
                 <com.lsourtzo.narkissos.narkissos.TextViewCM
                     style="@style/InerText"
                     android:layout_toRightOf="@id/smallimage"
-                    android:paddingRight="@dimen/OuterSpace"
-                    android:text="@string/MainText"
-                    android:textSize="@dimen/BodySize" />
+                    android:paddingRight="@dimen/outerSpace"
+                    android:text="@string/mainText"
+                    android:textSize="@dimen/bodySize" />
             </RelativeLayout>
 
             <com.lsourtzo.narkissos.narkissos.TextViewCM
                 android:id="@+id/marquee_text_1"
                 style="@style/InerText"
-                android:layout_marginBottom="@dimen/SmallSpace"
+                android:layout_marginBottom="@dimen/smallSpace"
                 android:text="@string/scrolltext"
-                android:textSize="@dimen/BodySizeL"
+                android:textSize="@dimen/bodySizeL"
                 android:singleLine="true"
                 android:ellipsize="marquee"
                 android:marqueeRepeatLimit="marquee_forever"
@@ -133,13 +139,13 @@
 
                 <com.lsourtzo.narkissos.narkissos.TextViewCM
                     style="@style/InfoText"
-                    android:text="@string/Address" />
+                    android:text="@string/address" />
             </LinearLayout>
 
             <ImageView
                 android:layout_height="150dp"
                 android:layout_width="match_parent"
-                android:layout_marginTop="@dimen/SmallSpace"
+                android:layout_marginTop="@dimen/smallSpace"
                 android:src="@drawable/map2"
                 android:onClick="callgooglemap"/>
 
@@ -153,7 +159,7 @@
 
                 <com.lsourtzo.narkissos.narkissos.TextViewCM
                     style="@style/InfoText"
-                    android:text="@string/Tel" />
+                    android:text="@string/tel" />
             </LinearLayout>
 
             <LinearLayout
@@ -166,13 +172,13 @@
 
                 <com.lsourtzo.narkissos.narkissos.TextViewCM
                     style="@style/InfoText"
-                    android:text="@string/FB" />
+                    android:text="@string/fb" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/InerSpace">
+                android:layout_marginBottom="@dimen/inerSpace">
 
                 <ImageView
                     style="@style/InfoIcon"
@@ -180,7 +186,7 @@
 
                 <com.lsourtzo.narkissos.narkissos.TextViewCM
                     style="@style/InfoText"
-                    android:text="@string/Time" />
+                    android:text="@string/time" />
             </LinearLayout>
 
             <ImageView style="@style/LineStyle" />
@@ -256,15 +262,15 @@
                     style="@style/CreatedByText"
                     android:layout_width="match_parent"
                     android:layout_alignParentLeft="true"
-                    android:paddingLeft="@dimen/OuterSpace"
-                    android:text="@string/CreatedBy" />
+                    android:paddingLeft="@dimen/outerSpace"
+                    android:text="@string/createdBy" />
 
                 <com.lsourtzo.narkissos.narkissos.TextViewCM
                     style="@style/CreatedByText"
                     android:layout_width="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:paddingRight="@dimen/OuterSpace"
-                    android:text="@string/Name" />
+                    android:paddingRight="@dimen/outerSpace"
+                    android:text="@string/name" />
 
             </RelativeLayout>
 
@@ -273,3 +279,14 @@
     </ScrollView>
 
 </LinearLayout>
+
+    <ImageView
+        android:id="@+id/heartanim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:onClick="heartremove"/>
+
+</RelativeLayout>

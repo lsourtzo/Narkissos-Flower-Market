@@ -1,6 +1,6 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="TitleSize">20sp</dimen>
-    <dimen name="Title1">51sp</dimen>
-    <dimen name="Title2">18sp</dimen>
+    <dimen name="titleSize">20sp</dimen>
+    <dimen name="title1">51sp</dimen>
+    <dimen name="title2">18sp</dimen>
 </resources>

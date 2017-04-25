@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">Narkissos</string>
-    <string name="MainTitle">Since 1992 we have managed to connect our brand with affordable prices and high quality.</string>
-    <string name="MainText">"The Perivolaraki family history lies from the beginning of 1900. In 1930 K.Perivolarakis, the grandfather of the family who grew his own flowers which he later sold at the market. The current generation, Goerge kept on cultivating flowers, until 1992 when along with his wife opened up their first florist shop, named Narkissos, which is run by her son, Constantine Perivolarakis the junior. "</string>
-    <string name="Address">Ginosati 83, Metamorfosi Attica, Greece</string>
-    <string name="Tel">210 28 12 141</string>
-    <string name="FB">www.facebook.com/perivolarakis.costas</string>
-    <string name="Time">09:00 am - 10:30 pm</string>
-    <string name="CreatedBy">Created By :</string>
-    <string name="Name">Sourtzopoulos Leonidas</string>
-    <string name="Title1">Narkissos</string>
-    <string name="Title2"> F l o w e r S y n t h e s i s</string>
+    <string name="mainTitle">Since 1992 we have managed to connect our brand with affordable prices and high quality.</string>
+    <string name="mainText">"The Perivolaraki family history lies from the beginning of 1900. In 1930 K.Perivolarakis, the grandfather of the family who grew his own flowers which he later sold at the market. The current generation, Goerge kept on cultivating flowers, until 1992 when along with his wife opened up their first florist shop, named Narkissos, which is run by her son, Constantine Perivolarakis the junior. "</string>
+    <string name="address">Ginosati 83, Metamorfosi Attica, Greece</string>
+    <string name="tel">210 28 12 141</string>
+    <string name="fb">www.facebook.com/perivolarakis.costas</string>
+    <string name="time">09:00 am - 10:30 pm</string>
+    <string name="createdBy">Created By :</string>
+    <string name="name">Sourtzopoulos Leonidas</string>
+    <string name="title1">Narkissos</string>
+    <string name="title2"> F l o w e r S y n t h e s i s</string>
     <string name="scrolltext">Wedding - Baptism - Decorations - Bouquets - FlowerSynthesis</string>
 </resources>
